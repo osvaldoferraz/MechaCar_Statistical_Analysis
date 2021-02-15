@@ -18,3 +18,12 @@ total_summary <- Susp_mecha %>% summarize(Mean=mean(PSI), Median=median(PSI), Va
 lot_summary <- Susp_mecha %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep')
 
 #DELIVERABLE 3
+# In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+t.test(Susp_mecha$PSI, mu=1500)
+# Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+Lot1 <- subset(Susp_mecha, Manufacturing_Lot == 'Lot1')
+Lot2 <- subset(Susp_mecha, Manufacturing_Lot == 'Lot2')
+Lot3 <- subset(Susp_mecha, Manufacturing_Lot == 'Lot3')
+t.test(Lot1$PSI, mu=1500)
+t.test(Lot2$PSI, mu=1500)
+t.test(Lot3$PSI, mu=1500)
