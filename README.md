@@ -51,3 +51,26 @@ As supported by the image below regarding Lot 2, **there is no statistical diffe
 As supported by the image below regarding Lot 3, **there is a statistical difference** between this production and the population mean of 1500 PSI (P-value is 0.04, and it is sufficient to reject the null hypothesis)
 
 ![Screen Shot 2021-02-14 at 7 43 42 PM](https://user-images.githubusercontent.com/72593264/107896783-f370c500-6efc-11eb-9eec-306c1cb2c5cf.png)
+
+## Study Design: MechaCar vs Competition
+
+In order to better understand the MechaCar market and its competition, a study is being proposed to answer some questions that will help direct the production of the MechaCar, aiming to be a competitve product.
+
+One factor that is important to consider when produciong a car is its fuel efficiency, which influency directly in the car's maintenance cost. If MechaCar can be more fuel efficient than ots competition it can help on its sales.
+
+Since MechaCar will be desinged mostly to be used in urban enviroments, the **City Fuel Efficiency** will be the aim of this study.
+
+### Null Hypothesis
+
+- MechaCar average city fuel comsuption is not significantly diferent than the competition's average city fuel comsuption.
+
+### Statistical test
+- ANOVA test is going to be used, since we will work with a categorical variable (car models, competitions and MechaCar) and a continuous variable (City Fuel Comsuption).
+
+### Data
+- The data needed for this study is the city fuel comsuption for the MechaCar, and its competition models.
+
+
+
+
+
